@@ -11,7 +11,8 @@ function App() {
 
     const rederingMovies = movies.map(movie =>{
        return (
-           <Movie movie={movie}/>
+           <Movie movie={movie} key={movie.title}/>
+           /*key는 컴포넌트 호출할때 직접 지정*/
        );
     });
 

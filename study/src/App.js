@@ -34,12 +34,13 @@ function App() {
             ...movies,{
                 title : movieTitle,
                 year: movieYear
-        }])
+        }]);
+        /* ...A = A에 이미 담겨진 기존 원소들을 가지고 옴
+        * 위에서 ...movies를 하지 않을시 추가가 아닌 덮어쓰기의 형식이 되는 것 */
 
-        /*movies.push({
-            title : movieTitle,
-            year: movieYear
-        })*/ /*단순 push가 아니라 상태로 변경해주어야 함*/
+        setMovieTitle('');
+        setMovieYear('')
+        /*등록 후에 input창 초기화*/
     };
 
     return (

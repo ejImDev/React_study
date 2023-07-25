@@ -22,7 +22,6 @@ function App() {
            />
        );
     }) : '추가된 영화가 없습니다.';
-    /*DB연동을 사용하지 않았기때문에 임의로 sysdate를 id로 함*/
 
     const addMovie = (movie) => {
         setMovies([

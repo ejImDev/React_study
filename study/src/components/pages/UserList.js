@@ -4,9 +4,12 @@ const UserList = ({users}) => {
     console.log(users)
     return (
         <div>
-            {users.map(user => { {/*map을 이용하여 반복 출력*/}
-                return(<div key={user.id}> /*map을 사용할때는 key를 작성해야함*/
-                    {user.name}
+
+            {users.map(user => {
+                return(<div className="card mb-2">
+                    <div className="card-body p-3" key={user.id}>
+                        {user.name}
+                    </div>
                 </div>);
             })}
         </div>

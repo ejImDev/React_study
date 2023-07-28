@@ -6,8 +6,8 @@ const UserList = ({users}) => {
         <div>
 
             {users.map(user => {
-                return(<div className="card mb-2">
-                    <div className="card-body p-3" key={user.id}>
+                return(<div className="card mb-2" key={user.id}>
+                    <div className="card-body p-3">
                         {user.name}
                     </div>
                 </div>);
